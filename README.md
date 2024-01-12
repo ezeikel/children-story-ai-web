@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yarn Web Application
+
+Welcome to the Yarn Web Application - a magical place where children's voices
+bring stories to life!
+
+## Overview
+
+This application allows young users to record their voice, which is then sent to
+an AI that generates a short, magical story based on their words. It's a fun and
+interactive way for kids to engage with technology and unleash their creativity.
+
+## Features
+
+- Voice recording on the browser.
+- Integration with OpenAI to transcribe voice to text and generate stories.
+- Stylish and responsive UI built with Styled Components.
+- ~~Server-side handling of OpenAI API calls for enhanced security.~~
 
 ## Getting Started
 
-First, run the development server:
+To get the application running locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository.
+2. Install the dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   yarn install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   yarn dev
+   ```
 
-## Learn More
+Navigate to `http://localhost:3000` to view the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `yarn dev`: Runs the application in development mode.
+- `yarn build`: Builds the application for production.
+- `yarn start`: Starts a production server.
+- `yarn lint`: Runs the linter to check for issues.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Dependencies
 
-## Deploy on Vercel
+- `next`: The React framework for production.
+- `react` & `react-dom`: For building the user interface.
+- `styled-components`: For styling components.
+- `styled-normalize`: For normalizing default browser styling.
+- `openai`: Official OpenAI client for JavaScript.
+- `@vercel/analytics`: Vercel's analytics library for Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Dev Dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `typescript`: Adds static type checking to JavaScript.
+- `eslint`: Statically analyzes your code to quickly find problems.
+- `@types/node`, `@types/react`, `@types/react-dom`: Type definitions for
+  Node.js and React.
+- `babel-plugin-styled-components`: A plugin for Babel that improves the
+  development experience with Styled Components.
+
+## Contributing
+
+We welcome contributions to make this application even more magical! If you're
+interested in helping, feel free to open an issue or create a pull request.
+
+## License
+
+This project is open-sourced software licensed under the MIT license.
