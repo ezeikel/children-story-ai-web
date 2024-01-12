@@ -69,9 +69,7 @@ const Button = styled.button`
   &:hover {
     background-color: var(--color-white);
     border-color: var(--color-white);
-    a {
-      color: var(--color-purple);
-    }
+    color: var(--color-purple);
   }
 `;
 
