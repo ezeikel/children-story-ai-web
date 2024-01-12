@@ -34,21 +34,27 @@ const Overlay = styled.div`
 const Heading = styled.h1`
   font-family: var(--font-tommy-soft);
   font-weight: 500;
-  font-size: 7.2rem;
+  font-size: 3.8rem;
   color: var(--color-white);
   text-align: center;
   margin: 0;
   word-wrap: break-word;
+  @media (min-width: 768px) {
+    font-size: 7.2rem;
+  }
 `;
 
 const Subheading = styled.h3`
   font-family: var(--font-tommy-soft);
   font-weight: 300;
-  font-size: 4.2rem;
+  font-size: 2rem;
   color: var(--color-white);
   text-align: center;
   margin: 0;
   word-wrap: break-word;
+  @media (min-width: 768px) {
+    font-size: 4.2rem;
+  }
 `;
 
 const Button = styled.button`
@@ -63,7 +69,9 @@ const Button = styled.button`
   &:hover {
     background-color: var(--color-white);
     border-color: var(--color-white);
-    color: var(--color-purple);
+    a {
+      color: var(--color-purple);
+    }
   }
 `;
 

@@ -22,10 +22,13 @@ const Wrapper = styled.div`
 const Heading = styled.h1`
   font-family: var(--font-tommy-soft);
   font-weight: 500;
-  font-size: 5.6rem;
+  font-size: 2.6rem;
   text-align: center;
   color: var(--color-ink);
   margin: var(--spacing-huge) 0 0;
+  @media (min-width: 768px) {
+    font-size: 5.6rem;
+  }
 `;
 
 const RecordButton = styled.button`
@@ -34,13 +37,16 @@ const RecordButton = styled.button`
   color: var(--color-white);
   border: 3px solid var(--color-purple);
   border-radius: var(--border-radius);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   &:hover {
     background-color: var(--color-white);
     border-color: var(--color-white);
     color: var(--color-purple);
+  }
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
   }
 `;
 
@@ -49,13 +55,21 @@ const ReturnButton = styled.button`
   padding: var(--spacing-medium) var(--spacing-large);
   border: 3px solid var(--color-purple);
   border-radius: var(--border-radius);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  a {
+    color: var(--color-purple);
+  }
   &:hover {
     background-color: var(--color-white);
     border-color: var(--color-white);
-    color: var(--color-purple);
+    a {
+      color: var(--color-purple);
+    }
+  }
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
   }
 `;
 
